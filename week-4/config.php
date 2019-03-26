@@ -1,16 +1,14 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'demo');
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-?>
+
+/**
+ * Database config
+ */
+$host       = "sql307.epizy.com";
+$username   = "epiz_23664080";
+$password   = "vgGGiANGkQxI";
+$dbname     = "epiz_23664080_ashtest";
+$db_registration = "epiz_23664080_registration";
+$dsn        = "mysql:host=$host;dbname=$dbname";
+$options = array(
+  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+);
